@@ -4,6 +4,10 @@
 This NodeJS project has `SCSS` and `TypeScript` preinstalled alongside `webpack` for a quick startup.
 
 ___
+## Installation
+To install the necessary package:
+`npm install`
+___
 
 ## Commands
 
