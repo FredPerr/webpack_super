@@ -1,14 +1,18 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/app.ts',
+    entry: [
+        "webpack-dev-server/client?http://127.0.0.0:8000/",
+        "webpack/hot/only-dev-server",
+        "./src/app"
+      ],
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'main.js',
     },
     devServer: {
         port: 8000,
-        publicPath: "/",
+        publicPath: "http://localhost:8000",
         contentBase: "./src",
         hot: true
     },
